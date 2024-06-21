@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button {
+    @apply bg-[#d9dcef] rounded-full h-16 w-16 text-[#6d7188] text-2xl;
+}
