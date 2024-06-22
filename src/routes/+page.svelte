@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { onMount } from "svelte";
+
 
 function addToEquation(value: string) {
         equation += value;
@@ -46,6 +48,16 @@ function addToEquation(value: string) {
             document.activeElement?.blur();
         }, 100);
     }
+
+    onMount(() => {
+        let allButtons = document.getElementsByTagName('button');
+        for (let i = 0; i < allButtons.length; i++) {
+            allButtons[i].addEventListener('click', () => {
+                new Audio('/click.wav').play();
+                document.activeElement?.blur();
+            });
+        }
+    });
 </script>
 
 <svelte:head>
