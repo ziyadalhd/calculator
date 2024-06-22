@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 button {
-    @apply bg-[#d9dcef] rounded-full h-14 w-14 text-[#6d7188] hover:bg-[#d9dcef]/60 text-2xl font-bold shadow-xl flex items-center justify-center;
+    @apply bg-[#d9dcef] rounded-full h-14 min-w-14 text-[#6d7188] hover:bg-[#d9dcef]/60 text-2xl font-bold shadow-xl flex items-center justify-center;
 }
 
 body{
